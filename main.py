@@ -1,105 +1,125 @@
-#########################################
-### Tipos de datos en python          ###
-#########################################
+# #########################################
+# ### Tipos de datos en python          ###
+# #########################################
 
-print(type(6)) # int (entero)
-print(type(6.5)) # float (flotante)
-print(type(6j)) # complex (numero complejo)
-print(type("")) # str (string)
-print(type(True)) # bool (booleano)
+# # print(type(45)) # int (entero)
+# # print(type(6.56645)) # float (flotante)
+# # print(type(6j)) # complex (numero complejo)
+# # print(type("")) # str (string)
+# # print(type(True)) # bool (booleano)
 
-#########################################
-### Variables en python               ###
-#########################################
+# #########################################
+# ### Variables en python               ###
+# #########################################
 
-miVariable = "Hola mundo"
+# miVariable = "Hola mundo"
 
-#########################################
-### Constantes en python              ###
-#########################################
+# #########################################
+# ### Constantes en python              ###
+# #########################################
 
+# MICONSTANTE = "hihi"
 
-MICONSTANTE = "hihi"
+# #########################################
+# ### Operaciones aritméticas en python ###
+# #########################################
 
-#########################################
-### Operaciones aritméticas en python ###
-#########################################
+# ## suma
+# print(2+2)
 
-## suma
-print(2+2)
+# ## Resta
+# print(2-2)
 
-## Resta
-print(2-2)
+# ## Division flotante
+# print(3/2)
 
-## Division flotante
-print(2/2)
+# ## Division exacta
+# print(3//2)
 
-## Division exacta
-print(2//2)
+# ## Multiplicacion
+# print(2*2)
 
-## Multiplicacion
-print(2*2)
+# ## Exponenciacion
+# print(3**3)
 
-## Exponenciacion
-print(3**3)
+# #########################################
+# ### Operadores de asignacion          ###
+# #########################################
 
-#########################################
-### Operadores de asignacion          ###
-#########################################
+# ## Asignacion
+# miVariable = 15
+# print(miVariable)
 
-## Asignacion
-miVariable = 15
-print(miVariable)
+# ## Asignación de suma
+# miVariable += 5
+# # miVariable = miVariable + 5
+# print(miVariable)
 
-## Asignación de suma
-miVariable += 5
-print(miVariable)
+# ## Asignación de resta
+# miVariable -= 10
+# print(miVariable)
 
-## Asignación de resta
-miVariable -= 10
-print(miVariable)
+# ## Asignacion de division flotante
+# miVariable /= 2
+# print(miVariable)
 
-## Asignacion de division flotante
-miVariable /= 2
-print(miVariable)
+# ## Asignacion de division exacta
+# miVariable //= 5
+# print(miVariable)
 
-## Asignacion de division exacta
-miVariable //= 5
-print(miVariable)
+# ## Asignacion de multiplicacion
+# miVariable *= 10
+# print(miVariable)
 
-## Asignacion de multiplicacion
-miVariable *= 10
-print(miVariable)
+# ## Asignacion de exponenciacion
+# miVariable**=2
+# print(miVariable)
 
-## Asignacion de exponenciacion
-miVariable**=2
-print(miVariable)
+# #########################################
+# ### Condicionales en python           ###
+# #########################################
 
-#########################################
-### Condicionales en python           ###
-#########################################
+# ## if
+# if 5 > 3:
+#   print("5 es mayor que 3")
 
-## if
-if 5 > 3:
-  print("5 es menor que 3")
+# ## if-else
+# if 5 < 3:
+#   print("esta linea no se ejecuta")
+# else:
+#   print("esta linea si")
 
-## if-else
-if 5 < 3:
-  print("esta linea no se ejecuta")
-else:
-  print("esta linea si")
-
-## if-elif-else (elif = else if)
-if 5 < 3:
-  print("esta linea tampoco se ejecutara")
-elif 5 > 3:
-  print("esta si se ejecutara")
-else:
-  print("como la anterior se ejecutó, esta no")
+# ## if-elif-else (elif = else if)
+# if 10 != 10:
+#   print("esta linea tampoco se ejecutara")
+# elif 5 > 3:
+#   print("esta si se ejecutara")
+# elif 5 < 3:
+#   print()
+# else:
+#   print("como la anterior se ejecutó, esta no")
 
 #########################################
 ### Ingreso de valores por consola    ###
 #########################################
 
-miVariable = input("Puedes colocar algo de mensaje para la entrada: ")
-print(miVariable)
+# miVariable = input("Puedes colocar algo de mensaje para la entrada: ")
+# print(miVariable)
+
+lista = ["Hola", "Mundo", "Protocolo", "Sharon", "elibeth", 245354]
+print(lista)
+
+lista.pop()
+print(lista)
+lista.append("Henrry")
+print(lista)
+
+lista.clear()
+print(lista)
+
+tupla = ("Elibeth", "Anthony")
+
+print(tupla.count("Luis"))
+
+numero = int(input("Ingrese nro: "))
+print(numero, type(numero))
